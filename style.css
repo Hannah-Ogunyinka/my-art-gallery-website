@@ -8,11 +8,14 @@
     padding: 0;
 }
 
+
+
 html, body {
     font-family: 'Outfit', sans-serif;
     box-sizing: border-box;
+    max-width: 1500px;
     height: 100%;
-    margin: 0px;
+    margin: 0px auto;
 }
 
 h1{
@@ -28,7 +31,6 @@ p{
     font-weight: 200;
     font-size: 22px;
     /* background-color: #96ceb4; */
-    margin: 0 30px 0 80px;
     line-height: 1.5;
 }
 
@@ -78,10 +80,50 @@ header {
 .hero-text {
     display:flex;
     /* align-items:center; */
-    height:100%;
+    height:400px;
+    max-width: 500px;
+    flex-direction: column;
     position:relative;
     top: 183px;
-    right: 30%
+    right: 30%;
+    padding: 0 25px 0 80px;
+    /* background-color: #96ceb4; */
+}
+
+
+button {
+    cursor: pointer;
+    display: inline-block;
+    background: linear-gradient(to right, #151515 80%, #d5966c 20%);
+    border:none;
+    width:260px;
+    height:72px;
+    font-family: 'Big Shoulders Display';
+    font-size:20px;
+    font-weight:800;
+    padding: 0 0 0 15px;
+    color:#fff;
+    text-transform:uppercase;
+    letter-spacing: 3.63636px;
+    line-height: 1.2;
+    text-align: centre;
+    text-decoration: none;
+    margin: 60px 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button:active {
+    background: linear-gradient(to right, #d5966c 80%, #151515 20%);
+}
+
+button:hover {
+    background: linear-gradient(to right, #d5966c 80%, #151515 20%);
+}
+
+button img {
+    position: relative;
+    padding: 0 0px 0 50px;
 }
 
 
