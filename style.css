@@ -26,6 +26,14 @@ h1{
     line-height: 0.9;
 }
 
+h3{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight:900;
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
 p{
     font-family: 'Outfit', sans-serif;
     font-weight: 200;
@@ -140,8 +148,7 @@ main{
 
 .image-gallery div {
     display: flex;
-    justify-content: flex-start;
-    align-items:center;
+    text-align: left;
 }
 
 .image-gallery div:nth-child(1) {
@@ -149,15 +156,13 @@ main{
     grid-row: 1/2;
     flex-direction: column;
     width: 435px;
-    background-color: antiquewhite;
     position: relative;
     left: 15px;
+    padding: 75px 120px 0 0;
 }
 
-.image-gallery div:nth-child(1) div {
-    width: 350px;
-    height: 280px;
-    background-color: aquamarine;
+.image-gallery div:nth-child(1) p {
+    padding-top: 45px;
 }
 
 .image-gallery div:nth-child(2) {
@@ -203,7 +208,10 @@ main{
 .image-gallery div:nth-child(5) {
     grid-column: 4/6;
     grid-row: 3/4;
-    background-color: antiquewhite;
+    flex-direction: column;
+    color:#fff;
+    background-color: #151515;
+    padding: 65px 48px;
     position: relative;
     left: -15px;
 }
