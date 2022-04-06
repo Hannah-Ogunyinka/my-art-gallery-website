@@ -135,8 +135,8 @@ button img {
 }
 
 main{
-    max-width: 1100px;
-    margin: 165px auto;
+    max-width: 1132.5px;
+    margin: 165px auto 180px;
 }
 
 .image-gallery {
@@ -216,6 +216,37 @@ main{
     left: -15px;
 }
 
+footer {
+    height: 244px;
+    margin: 0 auto;
+    background-color: #151515;
+    display: flex;
+    align-items: center;
+}
 
+footer h3 {
+    color: #fff;
+    font-size: 36px;
+    width: 200px;
+}
+
+footer p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    max-width: 430px;
+}
+
+li img {
+    margin: 0 10px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    width: 1132.5px;
+    margin: 80px 165px;
+    justify-content: space-between;
+}
 
 

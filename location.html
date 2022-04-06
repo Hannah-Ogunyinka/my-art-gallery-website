@@ -5,11 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+ 
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+  <style>
+    #map { height: 180px; }
+
+    .marker {
+  background-image: url('assets/icon-location.svg');
+  background-size: cover;
+  width: 60px;
+  height: 80px;
+  cursor: pointer;
+}
+  </style>
   <title>Frontend Mentor | Art gallery website</title>
 </head>
 <body>
+  <div id='map' style='width: 100vw; height: 600px;'></div>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY2FwdHVyZWxpZmUwNCIsImEiOiJjbDFua2JtZjMwcG14M2N1a3N6emp5Yzc5In0.PgmmamdCExtxrw09QgV_sA';
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/capturelife04/cl1nl5cdi005u14pno1z6d6at',
+      center:[-71.312829,41.490102],
+      zoom: 14.5
+    });
 
+    const geojson = {
+  type: 'FeatureCollection',
+  features: [
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-71.312829,41.490102]
+      },
+      properties: {
+        title: 'Mapbox',
+        description: 'Washington, D.C.'
+      }
+    },
+  ]
+};
+
+for (const feature of geojson.features) {
+
+  const el = document.createElement('div');
+  el.className = 'marker';
+  new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).addTo(map);
+}
+
+  </script>
+  
   Back to Home
 
   Our location
@@ -27,6 +76,7 @@
 
   The Modern Art Gallery is free to all visitors and open seven days a week 
   from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+
 
 </body>
 </html>
