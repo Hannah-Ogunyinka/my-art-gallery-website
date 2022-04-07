@@ -26,12 +26,23 @@ h1{
     line-height: 0.9;
 }
 
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight:900;
+    font-size: 70px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1; 
+    padding: 15px 0;  
+}
+
 h3{
     font-family: 'Big Shoulders Display', cursive;
     font-weight:900;
     font-size: 60px;
     text-transform: uppercase;
     line-height: 1;
+    padding: 15px 0;
 }
 
 p{
@@ -40,6 +51,7 @@ p{
     font-size: 22px;
     /* background-color: #96ceb4; */
     line-height: 1.5;
+    padding: 15px 0;
 }
 
 header {
@@ -87,7 +99,6 @@ header {
 
 .hero-text {
     display:flex;
-    /* align-items:center; */
     height:400px;
     max-width: 500px;
     flex-direction: column;
@@ -95,7 +106,6 @@ header {
     top: 183px;
     right: 30%;
     padding: 0 25px 0 80px;
-    /* background-color: #96ceb4; */
 }
 
 
@@ -235,6 +245,11 @@ footer p {
     font-weight: 300;
     font-size: 18px;
     max-width: 430px;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
 }
 
 li img {
