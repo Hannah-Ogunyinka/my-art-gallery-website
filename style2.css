@@ -80,7 +80,7 @@ button {
     font-family: 'Big Shoulders Display';
     font-size:20px;
     font-weight:800;
-    padding: 0 0 0 15px;
+    padding: 0 10px 0 0;
     color:#fff;
     text-transform:uppercase;
     letter-spacing: 3.63636px;
@@ -93,16 +93,16 @@ button {
 }
 
 button:active {
-    background: linear-gradient(to right, #d5966c 80%, #151515 20%);
+    background: linear-gradient(to left, #d5966c 80%, #151515 20%);
 }
 
 button:hover {
-    background: linear-gradient(to right, #d5966c 80%, #151515 20%);
+    background: linear-gradient(to left, #d5966c 80%, #151515 20%);
 }
 
 button img {
     position: relative;
-    padding: 0 50px 0 0px;
+    padding: 0 60px 0 0px;
 }
 
 .location{
