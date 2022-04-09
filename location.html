@@ -15,9 +15,11 @@
 <body>
 
   <section class="map-section">
-    <button><img src="assets/icon-arrow-left.svg" alt="button-arrow">back to home</button>
+    <a href="/index.html">
+      <button><img src="assets/icon-arrow-left.svg" alt="button-arrow">back to home</button>
+    </a>
     
-    <div id='map' style='width: 100vw; height: 600px;'></div>
+    <div id='map' style='max-width: 1440px; height: 600px;'></div>
     <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoiY2FwdHVyZWxpZmUwNCIsImEiOiJjbDFua2JtZjMwcG14M2N1a3N6emp5Yzc5In0.PgmmamdCExtxrw09QgV_sA';
       const map = new mapboxgl.Map({
