@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Screenshots
 
-![](./homepage-desktop.png)
-![](./locationpage-desktop.png)
+![](./screenshots/homepage-desktop.png)
+![](./screenshots/locationpage-desktop.png)
 
 ### Built with
 
